@@ -1,5 +1,4 @@
---- ui made by blinx
-
+--- made by blinx edited by Discover#8708
 local Interface   = {}
 
 local UserInputService = game:GetService("UserInputService")
@@ -80,19 +79,6 @@ function Interface:BeginMenu(menu_options)
     local Navigation = Window:WaitForChild("Navigation")
 
     Navigation.WindowTitle.Text = menu_options.Title
-	if inputService.TouchEnabled or inputService:GetPlatform() == Enum.Platform.UWP then 
-		local Tbutton = Instance.new("TextButton")
-		Tbutton.Position = UDim2.new(0.925, 0,0.232, 0)
-		Tbutton.Text = "RainHub"
-		Tbutton.BackgroundColor3 = Color3.fromRGB(26, 25, 26)
-		Tbutton.TextColor3 = Color3.new(1, 1, 1)
-		Tbutton.Size = UDim2.new(0, 141,0, 53)
-		Tbutton.BorderSizePixel = 0
-		Tbutton.BackgroundTransparency = 0.5
-		Tbutton.Parent = RainGUI["1"]
-		Tbutton.MouseButton1Click:Connect(function()
-			Window.Visible = true;
-		end)
 		local corner = Instance.new("UICorner")
 		corner.Parent = Tbutton
 		local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
@@ -1666,5 +1652,17 @@ function Interface:BeginMenu(menu_options)
 
     return TabHandler
 end
-
+if inputService.TouchEnabled or inputService:GetPlatform() == Enum.Platform.UWP then 
+	local Tbutton = Instance.new("TextButton")
+	Tbutton.Position = UDim2.new(0.925, 0,0.232, 0)
+	Tbutton.Text = "RainHub"
+	Tbutton.BackgroundColor3 = Color3.fromRGB(26, 25, 26)
+	Tbutton.TextColor3 = Color3.new(1, 1, 1)
+	Tbutton.Size = UDim2.new(0, 141,0, 53)
+	Tbutton.BorderSizePixel = 0
+	Tbutton.BackgroundTransparency = 0.5
+	Tbutton.Parent = RainGUI["1"]
+	Tbutton.MouseButton1Click:Connect(function()
+		Window.Visible = true;
+	end)
 return Interface
