@@ -1,3 +1,5 @@
+--- ui made by blinx
+
 local Interface   = {}
 
 local UserInputService = game:GetService("UserInputService")
@@ -89,7 +91,7 @@ function Interface:BeginMenu(menu_options)
 		Tbutton.BackgroundTransparency = 0.5
 		Tbutton.Parent = RainGUI["1"]
 		Tbutton.MouseButton1Click:Connect(function()
-			RainGUI["2"]["Visible"] = true;
+			Window.Visible = true;
 		end)
 		local corner = Instance.new("UICorner")
 		corner.Parent = Tbutton
