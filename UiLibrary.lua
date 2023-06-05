@@ -77,19 +77,7 @@ function Interface:BeginMenu(menu_options)
     local Elements = Window:WaitForChild("Elements")
     local WindowSHolder = Window:WaitForChild("WindowSHolder")
     local Navigation = Window:WaitForChild("Navigation")
-	if UserInputService:GetPlatform() == Enum.Platform.UWP then 
-		local Tbutton = Instance.new("TextButton")
-		Tbutton.Position = UDim2.new(0.925, 0,0.232, 0)
-		Tbutton.Text = "RainHub"
-		Tbutton.BackgroundColor3 = Color3.fromRGB(26, 25, 26)
-		Tbutton.TextColor3 = Color3.new(1, 1, 1)
-		Tbutton.Size = UDim2.new(0, 141,0, 53)
-		Tbutton.BorderSizePixel = 0
-		Tbutton.BackgroundTransparency = 0.5
-		Tbutton.Parent = Rain
-		Tbutton.MouseButton1Click:Connect(function()
-			Window.Visible = true;
-		end)
+	
     Navigation.WindowTitle.Text = menu_options.Title
 		local corner = Instance.new("UICorner")
 		corner.Parent = Tbutton
