@@ -77,7 +77,7 @@ function Interface:BeginMenu(menu_options)
     local Elements = Window:WaitForChild("Elements")
     local WindowSHolder = Window:WaitForChild("WindowSHolder")
     local Navigation = Window:WaitForChild("Navigation")
-	if inputService.TouchEnabled or inputService:GetPlatform() == Enum.Platform.UWP then 
+	if inputService:GetPlatform() == Enum.Platform.UWP then 
 		local Tbutton = Instance.new("TextButton")
 		Tbutton.Position = UDim2.new(0.925, 0,0.232, 0)
 		Tbutton.Text = "RainHub"
