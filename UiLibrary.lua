@@ -86,7 +86,7 @@ function Interface:BeginMenu(menu_options)
 		Tbutton.Size = UDim2.new(0, 141,0, 53)
 		Tbutton.BorderSizePixel = 0
 		Tbutton.BackgroundTransparency = 0.5
-		Tbutton.Parent = RainGUI["1"]
+		Tbutton.Parent = Rain
 		Tbutton.MouseButton1Click:Connect(function()
 			Window.Visible = true;
 		end)
