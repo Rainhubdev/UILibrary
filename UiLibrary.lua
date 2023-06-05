@@ -1,4 +1,4 @@
---- made by blinx edited by Discover#8708
+--- made by blinx edited by Discover#8708 lol
 local Interface   = {}
 
 local UserInputService = game:GetService("UserInputService")
